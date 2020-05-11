@@ -4,8 +4,9 @@ import React, {useEffect,useState}from 'react'
      const [logs,setLogs] = useState([])
      const [loading,setLoading] = useState(false)
 
-    useEffect()
-
+    useEffect(()=>{})
+    getLogs()
+    //eslint-disable-next-line
 
      const getLogs = async () => {
          setLoading(true)
@@ -18,9 +19,16 @@ import React, {useEffect,useState}from 'react'
          return <h4>loading...</h4>
      }
     return (
-        <div>
-            
-        </div>
+        
+           <ul className="collection-with-header">
+               <li className="collection-header">
+                   <h4 className="center">System Logs</h4>
+               </li>
+                {!loading && logs.length === 0 ?
+                 (<p className="center">No logs to show...</p>):
+                 (logs.map(log=><li>{log.message}</li>))}
+               </ul> 
+       
     )
 }
 export default Logs
