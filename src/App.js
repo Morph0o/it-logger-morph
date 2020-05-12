@@ -11,6 +11,9 @@ function App() {
   return (
     <Fragment>
      <SearchBar/>
+     <div className="container">
+       <Logs/>
+     </div>
     </Fragment>
   );
 }
