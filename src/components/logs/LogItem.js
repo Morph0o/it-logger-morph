@@ -5,7 +5,7 @@ import Moment from 'react-moment'
     return (
         <li className="collection-item">
            <div>
-        <a href='#edit-log-item' className ={`modal-trigger ${log.attention ? 'red-text': 'blue-text'}`} >
+        <a href='#edit-log-modal' className ={`modal-trigger ${log.attention ? 'red-text': 'blue-text'}`} >
         {log.message}</a>
         <br/>
         <span className='grey-text'>
