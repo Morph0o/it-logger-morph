@@ -45,6 +45,6 @@ import M from 'materialize-css/dist/js/materialize.min.js'
 }
 const modalStyle = {
     width: '75%',
-    hieght: '65%'
+    hieght: '75%'
 }
 export default AddTechModal
